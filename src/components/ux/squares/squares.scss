@@ -1,0 +1,36 @@
+.squaresWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #c6cac4;
+    color: black;
+    border: 1px solid;
+    border-radius: 5px;
+    @media screen and (min-width: 768px){
+        height: 60px;
+        width: 60px;
+    }
+
+    @media screen and (min-width: 1024px){
+        height: 70px;
+        width: 70px;
+    }
+
+    &[color-bg ="green"]{
+        background-color: #BDD2A6;
+        color: black ;
+        
+    }
+    &[color-bg ="yellow"]{
+        background-color: #FA824C;
+        color: black;
+        
+    }
+    &[color-bg ="disabled"]{
+        background-color: #535353;
+        color: whitesmoke;
+        
+    }
+}

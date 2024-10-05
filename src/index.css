@@ -1,0 +1,38 @@
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+a, p, h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  
+}
