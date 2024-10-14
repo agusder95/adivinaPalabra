@@ -12,7 +12,7 @@ const Home = () => {
 
     useEffect(() => {
         if (data) {
-            setWord(data);
+            setWord(data.toUpperCase());
         }
     }, [data, setWord]); // Adding setWord to the dependency array
 
