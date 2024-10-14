@@ -1,18 +1,20 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./lineWord.scss";
 import Squares from "../ux/squares/squares";
 import MainContext from "../../context/mainContext";
 import UserContext from "../../context/userInput";
-const LineWord = () => {
-    const {word} = useContext(MainContext);
-    const {userInput} = useContext(UserContext);
+const LineWord = ({ usrWord, color }) => {
+    const columQ = 5;
+
     return (
         <div className="lineWordWrapper">
-            <Squares letter={''}/>
-            <Squares letter={''}/>
-            <Squares letter={''} color={''}/>
-            <Squares letter={''}/>
-            <Squares letter={''}/>
+            {[...Array(columQ)].map((_, index) => (
+                <Squares
+                    key={index}
+                    letter={usrWord ? usrWord[index] : ""}
+                    color={color && color[index]}
+                />
+            ))}
         </div>
     );
 };

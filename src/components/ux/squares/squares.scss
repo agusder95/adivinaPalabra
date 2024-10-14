@@ -1,4 +1,5 @@
 .squaresWrapper{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,17 +19,17 @@
         width: 70px;
     }
 
-    &[color-bg ="green"]{
+    &[color-bg ="X"]{
         background-color: #BDD2A6;
         color: black ;
         
     }
-    &[color-bg ="yellow"]{
+    &[color-bg ="O"]{
         background-color: #FA824C;
         color: black;
         
     }
-    &[color-bg ="disabled"]{
+    &[color-bg ="-"]{
         background-color: #535353;
         color: whitesmoke;
         
